@@ -15,7 +15,7 @@ export function FinalCTA() {
         
         <a 
           href="#enquiry-form" 
-          className="inline-flex items-center justify-center bg-brand-blue text-white font-bold py-5 px-10 rounded-full hover:bg-brand-blue/90 transition-all shadow-[0_0_20px_rgba(46,75,224,0.4)] hover:shadow-[0_0_30px_rgba(46,75,224,0.6)] text-xl"
+          className="inline-flex items-center justify-center bg-brand-blue text-white font-bold py-5 px-10 rounded-none hover:bg-brand-blue/90 transition-all shadow-[0_0_20px_rgba(46,75,224,0.4)] hover:shadow-[0_0_30px_rgba(46,75,224,0.6)] text-xl"
         >
           Get the Brochure & Fee Details
         </a>

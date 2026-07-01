@@ -8,12 +8,12 @@ export function ImmersionGallery() {
 
   // We'll use placeholders that the user will replace with actual images
   const images = [
-    { src: "/assets/immersion/photo-1.jpg", alt: "Participants in session at IIM Kozhikode campus" },
-    { src: "/assets/immersion/photo-2.jpg", alt: "Campus walkways at IIM Kozhikode" },
-    { src: "/assets/immersion/photo-3.jpg", alt: "Group discussions during campus immersion" },
-    { src: "/assets/immersion/photo-4.jpg", alt: "Classroom learning experience" },
-    { src: "/assets/immersion/photo-5.jpg", alt: "Faculty interaction" },
-    { src: "/assets/immersion/photo-6.jpg", alt: "Networking on campus" }
+    { src: "https://images.unsplash.com/photo-1515162816999-a0c47dc192f7?w=800&q=80", alt: "Participants in session at IIM Kozhikode campus" },
+    { src: "https://images.unsplash.com/photo-1541339907198-e08756dedf3f?w=800&q=80", alt: "Campus walkways at IIM Kozhikode" },
+    { src: "https://images.unsplash.com/photo-1528605105345-5344ea20e269?w=800&q=80", alt: "Group discussions during campus immersion" },
+    { src: "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=800&q=80", alt: "Classroom learning experience" },
+    { src: "https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=800&q=80", alt: "Faculty interaction" },
+    { src: "https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=800&q=80", alt: "Networking on campus" }
   ];
 
   return (
@@ -33,7 +33,7 @@ export function ImmersionGallery() {
           {images.map((img, i) => (
             <div 
               key={i} 
-              className="relative aspect-video bg-white/10 rounded-xl overflow-hidden cursor-pointer group"
+              className="relative aspect-video bg-white/10 rounded-none overflow-hidden cursor-pointer group"
               onClick={() => {
                 setIndex(i);
                 setOpen(true);

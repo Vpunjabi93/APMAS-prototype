@@ -24,7 +24,7 @@ export function WhatMakesThisDifferent() {
 
         {/* Desktop Table */}
         <div className="hidden md:block max-w-5xl mx-auto">
-          <div className="bg-white rounded-2xl shadow-xl border border-gray-100 overflow-hidden">
+          <div className="bg-white rounded-none shadow-xl border border-gray-100 overflow-hidden">
             <table className="w-full text-left border-collapse">
               <thead>
                 <tr>
@@ -53,7 +53,7 @@ export function WhatMakesThisDifferent() {
         {/* Mobile Stacked Cards */}
         <div className="md:hidden space-y-6">
           {comparison.map((row, i) => (
-            <div key={i} className="bg-white rounded-2xl shadow-md border border-gray-100 overflow-hidden">
+            <div key={i} className="bg-white rounded-none shadow-md border border-gray-100 overflow-hidden">
               <div className="p-4 bg-gray-50 border-b border-gray-100 font-bold text-gray-900 text-center">
                 {row.label}
               </div>

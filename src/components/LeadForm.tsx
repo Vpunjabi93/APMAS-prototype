@@ -73,8 +73,8 @@ export function LeadForm() {
 
   if (status === 'success') {
     return (
-      <div className="bg-white p-8 rounded-2xl shadow-xl border border-gray-100 text-center flex flex-col items-center justify-center min-h-[400px]">
-        <div className="w-16 h-16 bg-green-100 text-green-600 rounded-full flex items-center justify-center mb-6">
+      <div className="bg-white p-8 rounded-none shadow-xl border border-gray-100 text-center flex flex-col items-center justify-center min-h-[400px]">
+        <div className="w-16 h-16 bg-green-100 text-green-600 rounded-none flex items-center justify-center mb-6">
           <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>
         </div>
         <h3 className="text-2xl font-bold text-gray-900 mb-2">Thanks — your brochure is on its way</h3>
@@ -84,7 +84,7 @@ export function LeadForm() {
   }
 
   return (
-    <div className="bg-white p-6 md:p-8 rounded-2xl shadow-xl border border-gray-100" id="enquiry-form">
+    <div className="bg-white p-6 md:p-8 rounded-none shadow-xl border border-gray-100" id="enquiry-form">
       <div className="mb-6">
         <h3 className="text-2xl font-bold font-display tracking-tight text-gray-900 mb-2">Get the Brochure & Fee Details</h3>
         <p className="text-sm text-gray-600">Join professionals from IT, FMCG, BFSI, Manufacturing and more who've taken the first step.</p>
@@ -98,7 +98,7 @@ export function LeadForm() {
             id="name" 
             name="name" 
             required 
-            className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-brand-blue focus:border-brand-blue transition-colors"
+            className="w-full px-4 py-3 rounded-none border border-gray-300 focus:ring-2 focus:ring-brand-blue focus:border-brand-blue transition-colors"
             placeholder="John Doe"
           />
         </div>
@@ -110,7 +110,7 @@ export function LeadForm() {
             id="email" 
             name="email" 
             required 
-            className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-brand-blue focus:border-brand-blue transition-colors"
+            className="w-full px-4 py-3 rounded-none border border-gray-300 focus:ring-2 focus:ring-brand-blue focus:border-brand-blue transition-colors"
             placeholder="john@company.com"
           />
         </div>
@@ -124,7 +124,7 @@ export function LeadForm() {
             required 
             inputMode="numeric"
             pattern="[\+]?[0-9\s-]{10,15}"
-            className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-brand-blue focus:border-brand-blue transition-colors"
+            className="w-full px-4 py-3 rounded-none border border-gray-300 focus:ring-2 focus:ring-brand-blue focus:border-brand-blue transition-colors"
             placeholder="+91 9876543210"
           />
         </div>
@@ -136,7 +136,7 @@ export function LeadForm() {
             id="city" 
             name="city" 
             required 
-            className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-brand-blue focus:border-brand-blue transition-colors"
+            className="w-full px-4 py-3 rounded-none border border-gray-300 focus:ring-2 focus:ring-brand-blue focus:border-brand-blue transition-colors"
             placeholder="Mumbai"
           />
         </div>
@@ -147,7 +147,7 @@ export function LeadForm() {
             id="experience" 
             name="experience" 
             required
-            className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-brand-blue focus:border-brand-blue transition-colors bg-white"
+            className="w-full px-4 py-3 rounded-none border border-gray-300 focus:ring-2 focus:ring-brand-blue focus:border-brand-blue transition-colors bg-white"
           >
             <option value="" disabled selected>Select experience</option>
             <option value="0-2">0–2 years</option>
@@ -160,7 +160,7 @@ export function LeadForm() {
         </div>
 
         {status === 'error' && (
-          <div className="p-3 bg-red-50 text-red-700 rounded-lg text-sm">
+          <div className="p-3 bg-red-50 text-red-700 rounded-none text-sm">
             {errorMessage}
           </div>
         )}
@@ -168,7 +168,7 @@ export function LeadForm() {
         <button 
           type="submit" 
           disabled={status === 'submitting'}
-          className="w-full bg-brand-blue text-white font-semibold py-4 px-6 rounded-full hover:bg-brand-blue/90 transition-all shadow-lg shadow-brand-blue/30 disabled:opacity-70 flex items-center justify-center min-h-[56px] mt-2"
+          className="w-full bg-brand-blue text-white font-semibold py-4 px-6 rounded-none hover:bg-brand-blue/90 transition-all shadow-lg shadow-brand-blue/30 disabled:opacity-70 flex items-center justify-center min-h-[56px] mt-2"
         >
           {status === 'submitting' ? 'Submitting...' : 'Get the Brochure'}
         </button>

@@ -22,7 +22,7 @@ export function FeeInstalments() {
 
         <div className="max-w-4xl mx-auto mb-12">
           {/* Desktop Table */}
-          <div className="hidden md:block bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden">
+          <div className="hidden md:block bg-white rounded-none shadow-lg border border-gray-100 overflow-hidden">
             <table className="w-full text-left border-collapse">
               <thead>
                 <tr className="bg-gray-50 border-b border-gray-200">
@@ -46,7 +46,7 @@ export function FeeInstalments() {
           {/* Mobile Stacked Cards */}
           <div className="md:hidden space-y-4">
             {schedule.map((row, i) => (
-              <div key={i} className="bg-white rounded-xl shadow-sm border border-gray-100 p-4 flex justify-between items-center">
+              <div key={i} className="bg-white rounded-none shadow-sm border border-gray-100 p-4 flex justify-between items-center">
                 <div>
                   <div className="text-xs text-gray-500 font-semibold uppercase tracking-wider mb-1">{row.when}</div>
                   <div className="font-bold text-gray-900">{row.stage}</div>

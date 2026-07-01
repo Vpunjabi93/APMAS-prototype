@@ -17,7 +17,7 @@ export function AdmissionDates() {
         <div className="max-w-5xl mx-auto mb-10">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {steps.map((step, i) => (
-              <div key={i} className="bg-white rounded-2xl p-8 border border-brand-blue/10 shadow-sm relative text-center flex flex-col items-center">
+              <div key={i} className="bg-white rounded-none p-8 border border-brand-blue/10 shadow-sm relative text-center flex flex-col items-center">
                 <div className="absolute -top-4 left-1/2 -translate-x-1/2 w-8 h-8 rounded-full bg-brand-blue text-white font-bold flex items-center justify-center border-4 border-white">
                   {i + 1}
                 </div>
@@ -28,7 +28,7 @@ export function AdmissionDates() {
           </div>
         </div>
 
-        <div className="max-w-2xl mx-auto text-center bg-yellow-50 text-yellow-800 p-4 rounded-xl border border-yellow-200">
+        <div className="max-w-2xl mx-auto text-center bg-yellow-50 text-yellow-800 p-4 rounded-none border border-yellow-200">
           <p className="font-medium">
             Seats and cohort quality are finite, and the instalment calendar is fixed to the batch. Applying early keeps your options open.
           </p>

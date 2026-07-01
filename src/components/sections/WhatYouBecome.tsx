@@ -26,8 +26,8 @@ export function WhatYouBecome() {
           
           <div className="grid grid-cols-1 md:grid-cols-5 gap-4">
             {framework.map((item, i) => (
-              <div key={i} className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:border-brand-blue/30 transition-colors flex flex-col items-center text-center">
-                <div className="w-12 h-12 bg-brand-purple-light text-brand-blue rounded-xl flex items-center justify-center font-bold text-xl mb-4">
+              <div key={i} className="bg-white p-6 rounded-none shadow-sm border border-gray-100 hover:border-brand-blue/30 transition-colors flex flex-col items-center text-center">
+                <div className="w-12 h-12 bg-brand-purple-light text-brand-blue rounded-none flex items-center justify-center font-bold text-xl mb-4">
                   {i + 1}
                 </div>
                 <h3 className="font-bold text-gray-900 text-lg mb-2">{item.title}</h3>

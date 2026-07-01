@@ -16,12 +16,12 @@ export function ProgrammeAtAGlance() {
           Programme at a Glance
         </h2>
 
-        <div className="bg-white rounded-2xl shadow-md border border-gray-200 overflow-hidden mb-10">
+        <div className="bg-white shadow-md border border-gray-200 overflow-hidden mb-10 rounded-none">
           <ul className="divide-y divide-gray-100">
             {specs.map((item, i) => (
               <li key={i} className="flex flex-col sm:flex-row p-4 sm:p-6 hover:bg-gray-50 transition-colors">
                 <div className="sm:w-1/3 font-bold text-gray-900 mb-1 sm:mb-0 uppercase text-sm tracking-wider flex items-center">
-                  <span className="w-1.5 h-1.5 rounded-full bg-brand-blue mr-3 hidden sm:block"></span>
+                  <span className="w-1.5 h-1.5 bg-brand-blue mr-3 hidden sm:block rounded-none"></span>
                   {item.label}
                 </div>
                 <div className="sm:w-2/3 text-gray-700 font-medium">{item.value}</div>

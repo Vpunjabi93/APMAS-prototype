@@ -4,13 +4,13 @@ export function CredentialFaculty() {
       name: "Prof. M. Geetha",
       quals: "Ph.D (IIT Madras) — Associate Professor, Marketing.",
       desc: "Research in consumer behaviour, retailing and branding; published in the European Journal of Marketing, Journal of Retailing and Consumer Services and more.",
-      img: "/faculty/geetha.jpg"
+      img: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&q=80"
     },
     {
       name: "Dr Sreejesh S",
       quals: "Ph.D, M.Phil., MBA — Assistant Professor, Marketing.",
       desc: "Research in brand management, services and online marketing; published in leading journals and author with Pearson India and Springer.",
-      img: "/faculty/sreejesh.jpg"
+      img: "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&q=80"
     }
   ];
 
@@ -34,12 +34,10 @@ export function CredentialFaculty() {
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {faculty.map((prof, i) => (
-              <div key={i} className="flex flex-col sm:flex-row gap-6 bg-gray-50 rounded-2xl p-6 border border-gray-100">
-                <div className="w-24 h-24 sm:w-32 sm:h-32 rounded-xl bg-gray-200 overflow-hidden shrink-0 border border-gray-300">
+              <div key={i} className="flex flex-col sm:flex-row gap-6 bg-gray-50 rounded-none p-6 border border-gray-100">
+                <div className="w-24 h-24 sm:w-32 sm:h-32 rounded-none bg-gray-200 overflow-hidden shrink-0 border border-gray-300">
                   {/* Placeholder for headshots */}
-                  <img src={`/assets${prof.img}`} alt={prof.name} className="w-full h-full object-cover text-[10px] text-gray-400 flex items-center justify-center bg-gray-200" onError={(e) => {
-                    e.currentTarget.src = `data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='128' height='128' viewBox='0 0 24 24' fill='none' stroke='%239ca3af' stroke-width='1' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2'/%3E%3Ccircle cx='12' cy='7' r='4'/%3E%3C/svg%3E`;
-                  }} />
+                  <img src={prof.img} alt={prof.name} className="w-full h-full object-cover" />
                 </div>
                 <div>
                   <h4 className="font-bold text-lg text-gray-900">{prof.name}</h4>
